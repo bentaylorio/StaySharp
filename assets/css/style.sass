@@ -24,6 +24,7 @@ nav
   height: 130px
   width: 100%
   margin: 0
+  overflow: hidden
 
 .main
   display: flex
@@ -36,9 +37,9 @@ nav
   overflow: none
   background-repeat: no-repeat
   background-size: cover
-  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.8), rgba(#333, 0.95)), url("../img/bg.jpg")
-  background: -moz-linear-gradient(rgba(#0d0d0d, 0.8), rgba(#333, 0.95)), url("../img/bg.jpg")
-  background: linear-gradient(rgba(#0d0d0d, 0.8), rgba(#333, 0.95)), url("../img/bg.jpg")
+  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.8), rgba(#0d0d0d, 0.8)), url("../img/bg.jpg")
+  background: -moz-linear-gradient(rgba(#0d0d0d, 0.8), rgba(#0d0d0d, 0.8)), url("../img/bg.jpg")
+  background: linear-gradient(rgba(#0d0d0d, 0.8), rgba(#0d0d0d, 0.8)), url("../img/bg.jpg")
 
 .main img
   postion: absolute
@@ -259,11 +260,13 @@ nav
   flex-direction: column
   text-align: center
   font-size: 130%
+  color: $hover
 
 .content p
   font-family: 'IBM Plex Sans', sans-serif
   font-size: 150%
   margin: 0 auto
+  width: 70%
 
 a
   text-decoration: none
@@ -276,12 +279,27 @@ a:hover
   justify-content: center
   align-items: center
   height: 100%
-  background: url("../img/bg1.jpeg")
+  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
+  background: -moz-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
+  background: linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
+
 
 #service
   justify-content: center
   align-content: center
   height: 100%
-  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.1), rgba(#333, 0.5)), url("../img/bg2.jpeg")
-  background: -moz-linear-gradient(rgba(#0d0d0d, 0.1), rgba(#333, 0.5)), url("../img/bg2.jpeg")
-  background: linear-gradient(rgba(#0d0d0d, 0.1), rgba(#333, 0.5)), url("../img/bg2.jpeg")
+  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/pattern.png")
+  background: -moz-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/pattern.png")
+  background: linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/pattern.png")
+
+#barber
+  justify-content: center
+  align-content: center
+  height: 100%
+
+#barber img
+  background: $hover
+  height: 180px
+  width: 180px
+  border: 0px solid $hover
+  border-radius: 50%

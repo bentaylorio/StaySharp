@@ -15,7 +15,8 @@ nav {
   border-bottom: 1px solid #383637;
   height: 130px;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 .main {
   display: flex;
@@ -28,9 +29,9 @@ nav {
   overflow: none;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -webkit-linear-gradient(rgba(13, 13, 13, 0.8), rgba(51, 51, 51, 0.95)), url("../img/bg.jpg");
-  background: -moz-linear-gradient(rgba(13, 13, 13, 0.8), rgba(51, 51, 51, 0.95)), url("../img/bg.jpg");
-  background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(51, 51, 51, 0.95)), url("../img/bg.jpg"); }
+  background: -webkit-linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url("../img/bg.jpg");
+  background: -moz-linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url("../img/bg.jpg");
+  background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.8)), url("../img/bg.jpg"); }
 
 .main img {
   postion: absolute;
@@ -307,12 +308,14 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 130%; }
+  font-size: 130%;
+  color: #EAEBD7; }
 
 .content p {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 150%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 70%; }
 
 a {
   text-decoration: none;
@@ -325,14 +328,28 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: url("../img/bg1.jpeg"); }
+  background: -webkit-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg");
+  background: -moz-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg");
+  background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg"); }
 
 #service {
   justify-content: center;
   align-content: center;
   height: 100%;
-  background: -webkit-linear-gradient(rgba(13, 13, 13, 0.1), rgba(51, 51, 51, 0.5)), url("../img/bg2.jpeg");
-  background: -moz-linear-gradient(rgba(13, 13, 13, 0.1), rgba(51, 51, 51, 0.5)), url("../img/bg2.jpeg");
-  background: linear-gradient(rgba(13, 13, 13, 0.1), rgba(51, 51, 51, 0.5)), url("../img/bg2.jpeg"); }
+  background: -webkit-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/pattern.png");
+  background: -moz-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/pattern.png");
+  background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/pattern.png"); }
+
+#barber {
+  justify-content: center;
+  align-content: center;
+  height: 100%; }
+
+#barber img {
+  background: #EAEBD7;
+  height: 180px;
+  width: 180px;
+  border: 0px solid #EAEBD7;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
