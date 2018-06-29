@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i')
+@import url('https://fonts.googleapis.com/css?family=Rye')
+
+//Declaring Variables
+$nice-easing : cubic-bezier(.55, 0, .51, 1)
+$prime: #A0BEDF
+$secondary: #383637
+$hover: #EAEBD7
+
+html, body
+  font-family: 'Rye', cursive
+  color: #383637
+  background-color: $prime
+  height: 100%
+  width: 100%
+  padding: 0
+  margin: 0
+
+
+nav
+  background-color: $prime
+  text-align: center
+  border-bottom: 1px solid $secondary
+  height: 130px
+  width: 100%
+  margin: 0
+
+.main
+  display: flex
+  height: 100%
+  width: 100%
+  margin: 0 auto
+  justify-content: center
+  align-items: center
+  resize: both
+  overflow: none
+  background-repeat: no-repeat
+  background-size: cover
+  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.8), rgba(#333, 0.95)), url("../img/bg.jpg")
+  background: -moz-linear-gradient(rgba(#0d0d0d, 0.8), rgba(#333, 0.95)), url("../img/bg.jpg")
+  background: linear-gradient(rgba(#0d0d0d, 0.8), rgba(#333, 0.95)), url("../img/bg.jpg")
+
+.main img
+  postion: absolute
+  height: 55%
+  padding: 20px
+  top: 50%
+  left: 50%
+
+.container
+  text-align: center
+
+
+.capabilities-list
+  padding: 0
+  list-style-type: none
+
+
+.capabilities-list-item
+  display: inline-block
+  margin: 0 1em 2em
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+
+.capability-title
+  margin: 0
+  font-size: 16px
+  text-transform: uppercase
+  letter-spacing: 0.5px
+  color: $secondary
+  transform: translate3d(0, 0, 0)
+  opacity: 0
+  transition: opacity 500ms $nice-easing
+  will-change: opacity
+  -webkit-backface-visibility: hidden
+  .animate &
+    transition: opacity 150ms $nice-easing
+    opacity: 1
+  .lower
+    text-transform: lowercase
+  >span:not(:first-child):before
+    content: "\A"
+    white-space: pre
+
+.barber-icon>g>*
+  transform: translate3d(0, 0, 0)
+  -webkit-backface-visibility: hidden
+  transition-timing-function: $nice-easing
+  will-change: stroke-dashoffset
+
+
+// Straight Razor
+.straight-razor-blade-right,
+.straight-razor-edge-right,
+.straight-razor-blade-left,
+.straight-razor-edge-left,
+.straight-razor-line-inner,
+.straight-razor-fulcrum
+  transition-duration: 700ms
+  stroke-dasharray: 120
+  stroke-dashoffset: 120
+  .animate &
+    stroke-dashoffset: 0
+
+// Comb
+.comb-handle
+  transition-duration: 750ms
+  stroke-dasharray: 160
+  stroke-dashoffset: 160
+  .animate &
+    stroke-dashoffset: 0
+
+.comb-line
+  transition-duration: 300ms
+  transition-delay: 400ms
+  stroke-dasharray: 120
+  stroke-dashoffset: 120
+  &:nth-of-type(2)
+    transition-delay: 500ms
+  .animate &
+    stroke-dashoffset: 0
+
+.comb-tine
+  transition-duration: 300ms
+  stroke-dasharray: 20
+  stroke-dashoffset: 20
+  @for $i from 1 through 16
+    &:nth-of-type($i)
+      transition-delay: $i * 20ms
+  .animate &
+    stroke-dashoffset: 0
+
+// Pick
+.pick-handle
+  transition-duration: 500ms
+  stroke-dasharray: 100
+  stroke-dashoffset: 100
+  .animate &
+    stroke-dashoffset: 0
+
+.pick-line-inner
+  transition-duration: 300ms
+  transition-delay: 250ms
+  stroke-dasharray: 60
+  stroke-dashoffset: 60
+  &:nth-of-type(2)
+    transition-delay: 350ms
+  .animate &
+    stroke-dashoffset: 0
+
+.pick-tine
+  transition-duration: 150ms
+  stroke-dasharray: 60
+  stroke-dashoffset: 60
+  @for $i from 1 through 5
+    &:nth-of-type(n + $i)
+      transition-delay: $i * 50ms
+  .animate &
+    stroke-dashoffset: 0
+
+.pick-circle
+  transition-duration: 200ms
+  stroke-dasharray: 22
+  stroke-dashoffset: 22
+  .animate &
+    stroke-dashoffset: 0
+
+// Scissors
+.scissors-blade-left,
+.scissors-blade-right
+  transition-duration: 400ms
+  stroke-dasharray: 120
+  stroke-dashoffset: 120
+  .animate &
+    stroke-dashoffset: 0
+
+.scissors-fulcrum
+  transition-duration: 400ms
+  stroke-dasharray: 22
+  stroke-dashoffset: 22
+  .animate &
+    stroke-dashoffset: 0
+
+.scissors-handle-left,
+.scissors-handle-right
+  transition-duration: 300ms
+  transition-delay: 150ms
+  stroke-dasharray: 34
+  stroke-dashoffset: 34
+  .animate &
+    stroke-dashoffset: 0
+
+// Razor Comb
+.razor-comb-edge-right,
+.razor-comb-blade-right,
+.razor-comb-blade-left
+  transition-duration: 700ms
+  stroke-dasharray: 140
+  stroke-dashoffset: 140
+  .animate &
+    stroke-dashoffset: 0
+
+.razor-comb-tine
+  transition-duration: 200ms
+  stroke-dasharray: 20
+  stroke-dashoffset: 20
+  @for $i from 1 through 12
+    &:nth-of-type($i)
+      transition-delay: $i * 50ms
+  .animate &
+    stroke-dashoffset: 0
+
+.razor-comb-line-inner
+  transition-duration: 400ms
+  transition-delay: 300ms
+  stroke-dasharray: 120
+  stroke-dashoffset: 120
+  .animate &
+    stroke-dashoffset: 0
+
+.razor-comb-fulcrum
+  transition-duration: 350ms
+  stroke-dasharray: 22
+  stroke-dashoffset: 22
+  .animate &
+    stroke-dashoffset: 0
+
+// Safety Razor
+.safety-razor-handle,
+.safety-razor-blade-top,
+.safety-razor-blade-bottom
+  transition-duration: 700ms
+  stroke-dasharray: 120
+  stroke-dashoffset: 120
+  .animate &
+    stroke-dashoffset: 0
+
+.safety-razor-line-inner
+  transition-duration: 350ms
+  stroke-dasharray: 20
+  stroke-dashoffset: 20
+  @for $i from 1 through 6
+    &:nth-of-type($i)
+      transition-delay: $i * 50ms
+  .animate &
+    stroke-dashoffset: 0
+
+.safety-razor-circle
+  transition-duration: 300ms
+  stroke-dasharray: 22
+  stroke-dashoffset: 22
+  .animate &
+    stroke-dashoffset: 0
+
+.content
+  text-align: center
+  font-size: 130%
+
+.content p
+  font-family: 'IBM Plex Sans', sans-serif
+  font-size: 150%
+  margin: 0 auto
+
+a
+  text-decoration: none
+  color: $secondary
+
+a:hover
+  color: $hover
+
+#about
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  background: url("../img/bg1.jpeg")
+
+#service
+  display: flex
+  justify-content: center
+  align-content: center
+  height: 100%
+  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.1), rgba(#333, 0.5)), url("../img/bg2.jpeg")
+  background: -moz-linear-gradient(rgba(#0d0d0d, 0.1), rgba(#333, 0.5)), url("../img/bg2.jpeg")
+  background: linear-gradient(rgba(#0d0d0d, 0.1), rgba(#333, 0.5)), url("../img/bg2.jpeg")
