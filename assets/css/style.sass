@@ -279,9 +279,6 @@ a:hover
   justify-content: center
   align-items: center
   height: 100%
-  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
-  background: -moz-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
-  background: linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
 
 
 #service
@@ -303,3 +300,22 @@ a:hover
   width: 180px
   border: 0px solid $hover
   border-radius: 50%
+
+#gallery
+  justify-content: center
+  align-content: center
+  height: 100%
+  background: -webkit-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
+  background: -moz-linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
+  background: linear-gradient(rgba(#0d0d0d, 0.6), rgba(#0d0d0d, 0.6)), url("../img/bg1.jpeg")
+
+.cards
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+  .cards img
+    margin: 10px
+    border: 3px solid $hover
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3)
+    max-width: 25vw

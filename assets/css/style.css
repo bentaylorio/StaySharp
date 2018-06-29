@@ -327,10 +327,7 @@ a:hover {
 #about {
   justify-content: center;
   align-items: center;
-  height: 100%;
-  background: -webkit-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg");
-  background: -moz-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg");
-  background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg"); }
+  height: 100%; }
 
 #service {
   justify-content: center;
@@ -351,5 +348,19 @@ a:hover {
   width: 180px;
   border: 0px solid #EAEBD7;
   border-radius: 50%; }
+
+#gallery {
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg");
+  background: -moz-linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg");
+  background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.6)), url("../img/bg1.jpeg"); }
+
+.cards .cards img {
+  margin: 10px;
+  border: 3px solid #EAEBD7;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  max-width: 25vw; }
 
 /*# sourceMappingURL=style.css.map */
