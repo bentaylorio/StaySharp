@@ -81,7 +81,8 @@ nav {
     display: none; } }
 @media screen and (max-width: 600px) {
   .capabilities-list-item {
-    display: none; }
+    display: none;
+    margin: 0; }
 
   .capabilities-list.open > .capabilities-list-item {
     display: block;
