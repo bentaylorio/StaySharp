@@ -19,6 +19,13 @@
     <div class="container">
 
       <ul class="capabilities-list">
+        <div class="hamburger show-sm" onclick="toggleChangeClass(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+
         <li class="capabilities-list-item animate">
           <svg class="barber-icon straigh-razor" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
             <g fill="none" stroke="#383637" stroke-width="2" stroke-miterlimit="10">
@@ -116,26 +123,25 @@
   <div class="main">
     <img src="assets/img/logo.png" alt="Stay Sharp">
   </div>
-  <div class="content" id="about">
+  <div class="content bkg-color-lightblue" id="about">
     <h1>About Us</h1>
-    <p>Stay Sharp Barber Shop is a one-stop-shop where we do  the doo-doo's and the watchmacallits for $20. </p>
+    <p>Minim incididunt deserunt enim id aliquip.</p>
   </div>
-  <div class="content" id="service">
+  <div class="content bkg-pattern-barber" id="service">
     <h1>Services</h1>
-    <h2>Hoopty: $20</h2>
-    <h2>Hoopty+: $20</h2>
+    <h2>Haircut: $20</h2>
+    <h2>Haircut &amp; Beard Trim: $20</h2>
     <h2>Hoopty Doopty: $25</h2>
     <h2>Military Discount: $18</h2>
   </div>
-  <div class="content" id="barber">
+  <div class="content bkg-color-lightblue" id="barber">
     <div class="portrait">
       <img src="assets/img/skull.png" alt="Larry">
     </div>
     <h1>Barber</h1>
-    <p>You need a haircut? Beard trim? Doodoo? Whatchamacallit? Larry is the guy for you. Larry is a classically
-      trained barber who can provide all the sevices you need at an unbeatable price!</p>
+    <p>Exercitation consequat ad labore laborum id duis enim. Sunt irure nulla pariatur velit nulla. Dolor eu nulla dolore ad reprehenderit fugiat quis amet nulla nulla magna.</p>
   </div>
-  <div class="content" id="gallery">
+  <div class="content bkg-pattern-brick" id="gallery">
     <h1>Gallery</h1>
     <main class="cards">
       <img src="http://via.placeholder.com/350x150" alt="Sample photo">
@@ -144,11 +150,9 @@
       <img src="http://via.placeholder.com/350x150" alt="Sample photo">
     </main>
   </div>
-  <div class="content" id="contact">
+  <div class="content bkg-color-lightblue" id="contact">
     <h1>Contact</h1>
-    <p>Our shop is located just off the Washington Square across the parking lot from Lindy's Downtown Market.
-      No appointments, walk-ins only. If you want a straight-razor shave please call ahead to allow us to warm
-      the towels.</p>
+    <p>In nostrud ullamco exercitation culpa occaecat in eiusmod do dolore laborum esse. Enim nulla et Lorem quis elit aliquip consectetur et ad. Ipsum proident qui magna cupidatat veniam laborum proident fugiat occaecat.</p>
     <hr>
     <h2>Hours of Operation:</h2>
     <h4>SUN-MON: CLOSED</h4>
@@ -173,6 +177,15 @@
     </div>
      -->
   </div>
+  <div class="footer">
+    <span>copyright &copy; 2018. made with <span class="heart">&hearts;</span> <a href="www.bentaylor.io">KCBM</a></span>
+  </div>
+
+  <script>
+    function toggleChangeClass(element) {
+      element.parentNode.classList.toggle("open");
+    }
+  </script>
 
 </body>
 
