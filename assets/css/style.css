@@ -159,17 +159,20 @@ a:hover {
 #contact h4 {
   margin: 10px; }
 
+a img {
+  margin: 25px 10px;
+  padding: 12px;
+  border: 2px solid #EAEBD7;
+  border-radius: 50%; }
+
+.buttons a img:hover {
+  border: 2px solid #383637;
+  background-color: #383637;
+  transform: scale(1.1); }
+
 .buttons {
   display: inline;
-  border: 2px solid #EAEBD7;
-  border-radius: 5px;
   width: 500px; }
-
-.buttons img {
-  height: 35px; }
-
-.buttons h5 {
-  margin: 5px 0px 10px 0px; }
 
 .footer {
   display: inline-block;
